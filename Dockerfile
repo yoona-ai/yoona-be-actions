@@ -10,7 +10,7 @@ RUN pip install pycodestyle
 RUN pip install pyflakes
 RUN pip install pylint
 
-COPY . .
+# COPY . .
 
 CMD pycodestyle --max-line-length=160 /github/workspace/
 CMD pyflakes checkRecursive /github/workspace/
